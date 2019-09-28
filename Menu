@@ -61,7 +61,7 @@ echo -e "${NC} "
 	echo -e "-----------------------------------------------------"
 
 	echo "-------------------------------------------------------" 
-	echo "|||||||||||||||| MyGatherBK-VPN |||||||||||||||||" 
+	echo "|||||||||||||||| SharkHost-VPN |||||||||||||||||" 
 	echo "-------------------------------------------------------"
 	echo -e "| 1|${BLUE} เพิ่มชื่อผู้ใช้งาน OpenVPN (Config)${NC} "
 	echo -e "| 2|${BLUE} เพิ่มชื่อผู้ใช้งาน {User/Pass}  SSH (HTTP) VPN (OPENVPN)${NC} "
@@ -612,7 +612,7 @@ echo -e "${RED} =============== OS-32 & 64-bit =================    "
 echo -e "${GREEN} ไอพีเซิฟ: $IP "
 echo -e "${NC} "
 echo ""
-echo " เปิด-ปิด-รีสตาร์ท การทำงานของระบบ Admin MyGatherBK VPN "
+echo " เปิด-ปิด-รีสตาร์ท การทำงานของระบบ Admin SharkHost VPN "
 echo ""
 echo "|1| OPENVPN"
 echo "|2| SSH DROPBEAR"
@@ -1192,7 +1192,7 @@ esac
 
 if [[ ! -e /usr/local/bin/Banwidth-Per-Client ]]; then
 	apt-get install python
-	wget -O /usr/local/bin/Banwidth-Per-Client "https://raw.githubusercontent.com//PURE/master/Banwidth-Per-Client"
+	wget -O /usr/local/bin/Banwidth-Per-Client "https://raw.githubusercontent.com/SharkHost/PURE/master/Banwidth-Per-Client"
 	chmod +x /usr/local/bin/Banwidth-Per-Client
 	clear
 echo ""
@@ -1408,7 +1408,7 @@ echo -e "${RED} =============== OS-32 & 64-bit =================    "
 echo -e "${GREEN} ไอพีเซิฟ: $IP "
 echo -e "${NC} "
 echo ""
-	echo -e "แบนด์วิดท์ ${GRAY}MyGatherBK-VPN${NC}"
+	echo -e "แบนด์วิดท์ ${GRAY}SharkHost-VPN${NC}"
 	echo ""
 	echo -e "วันนี้ ${GRAY}$TODAY${NC}"
 	echo -e "เมื่อวานนี้ ${GRAY}$YESTERDAY${NC}"
@@ -1807,7 +1807,7 @@ echo ""
 echo "Script  install openvpn"
 echo "
 sudo -i
-wget https://raw.githubusercontent.com/SharkHost/AutoVPN/master/openvpn-install.sh
+wget https://raw.githubusercontent.com/SharkHost/MyAuto/master/openvpn-install.sh
 chmod +x openvpn-install.sh
 ./openvpn-install.sh
 "
@@ -2188,7 +2188,7 @@ http {
 }
 END
 	mkdir -p /home/vps/public_html
-	echo "<pre>by MyGatherBK | MyGatherBK</pre>" > /home/vps/public_html/index.html
+	echo "<pre>by SharkHost | SharkHost</pre>" > /home/vps/public_html/index.html
 	echo "<?phpinfo(); ?>" > /home/vps/public_html/info.php
 	args='$args'
 	uri='$uri'
@@ -2310,7 +2310,7 @@ END
 fi
 
 
-	wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/SharkHost/AutoVPN/master/Menu"
+	wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/SharkHost/MyAuto/master/Menu"
 	chmod +x /usr/local/bin/menu
 	wget -O /usr/local/bin/Auto-Delete-Client "https://raw.githubusercontent.com/SharkHost/PURE/master/Auto-Delete-Client"
 	chmod +x /usr/local/bin/Auto-Delete-Client 
@@ -2594,7 +2594,7 @@ exit
 
 # Banner
 rm /etc/bannerssh
-wget -O /etc/bannerssh "https://raw.githubusercontent.com/SharkHost/AutoVPN/master/issue.net"
+wget -O /etc/bannerssh "https://raw.githubusercontent.com/SharkHost/MyAuto/master/issue.net"
 echo "Banner /etc/bannerssh" >> /etc/ssh/sshd_config
 service ssh restart
 
@@ -2729,7 +2729,7 @@ if [ $? -eq 0 ]; then
 	echo -e "\e[0m                                                   "
 	echo -e "\e[94m[][][]======================================[][][]"
 	echo -e "\e[0m                                                   "
-	echo -e "\e[93m           AutoScriptVPS by  MyGatherBK           "
+	echo -e "\e[93m           AutoScriptVPS by  SharkHost           "
 	echo -e "\e[0m                                                   "
 	echo -e "\e[93m                   OpenVPN Port                   "
 	echo -e "\e[93m                       "$openvpnport
@@ -3945,7 +3945,7 @@ echo -e "${RED} #    FB : https://m.me/Amkoonp       #    "
 echo -e "${RED} =============== OS-32 & 64-bit =================    "
 echo -e "${GREEN} ไอพีเซิฟ: $IP "
 echo -e "${NC} "
-echo -e "แก้ไขคอนฟิกต่างๆในระบบ ${GRAY}MyGatherBK-VPN${NC}"
+echo -e "แก้ไขคอนฟิกต่างๆในระบบ ${GRAY}SharkHost-VPN${NC}"
 echo ""
 echo -e "|${GRAY}1${NC}| OPENVPN ไฟล์ต้นแบบการสร้างคอนฟิก"
 echo -e "|${GRAY}2${NC}| OPENVPN ไฟล์ข้อมูลเซิฟเวอร์"
