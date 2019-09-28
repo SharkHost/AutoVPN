@@ -106,10 +106,6 @@ if [[ "$VERSION_ID" = 'VERSION_ID="7"' || "$VERSION_ID" = 'VERSION_ID="8"' || "$
 	echo ""
 	echo -e "${BLUE}>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<< ${NC}"
 	# vnstat meter
-if [[ -e /etc/vnstat.conf ]]; then
-	INTERFACE=`vnstat -m | head -n2 | awk '{print $1}'`
-	TOTALBW=$(vnstat -i $INTERFACE --nick local | grep "total:" | awk '{print $8" "substr ($9, 1, 1)}')
-fi
 
 ON=0
 OFF=0
