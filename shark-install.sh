@@ -475,7 +475,7 @@ http {
 }
 END
 	mkdir -p /home/vps/public_html
-	echo "<pre>by MyGatherBK | MyGatherBK</pre>" > /home/vps/public_html/index.html
+	echo "<pre>by SharkHost | SharkHost</pre>" > /home/vps/public_html/index.html
 	echo "<?phpinfo(); ?>" > /home/vps/public_html/info.php
 	args='$args'
 	uri='$uri'
@@ -599,9 +599,9 @@ fi
 
 # download script
 	cd /usr/local/bin
-wget -q -O m "https://raw.githubusercontent.com/MyGatherBk/MyAuto/master/Menu"
+wget -q -O m "https://raw.githubusercontent.com/SharkHost/PURE/master/Menu"
 chmod +x /usr/local/bin/m
-	wget -O /usr/local/bin/Auto-Delete-Client "https://raw.githubusercontent.com/MyGatherBk/PURE/master/Auto-Delete-Client"
+	wget -O /usr/local/bin/Auto-Delete-Client "https://raw.githubusercontent.com/SharkHost/PURE/master/Auto-Delete-Client"
 	chmod +x /usr/local/bin/Auto-Delete-Client 
 	apt-get -y install vnstat
 	cd /etc/openvpn/easy-rsa/
